@@ -1,5 +1,10 @@
 
 
+  AOS.init();
+
+
+
+
 // navbar 滑動後至頂
 window.onscroll = function() {myFunction()};
 
