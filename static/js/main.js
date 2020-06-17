@@ -1,34 +1,53 @@
 
+
+// navbar 滑動後至頂
+window.onscroll = function() {myFunction()};
+
+	var navbar = document.getElementById("navbar");
+	var sticky = navbar.offsetTop;
+
+	function myFunction() {
+	  if (window.pageYOffset >= sticky) {
+	    navbar.classList.add("sticky")
+	  } else {
+	    navbar.classList.remove("sticky");
+	  }
+	}
+
+// 換成百分比
 function toPercent(point){
 		  var str=Number(point*100).toFixed(2);
 		  str+="%";
 		  return str;
 		}
 
-		(function($) {
-			    $.fn.animateNumbers = function(stop, commas, duration, ease) {
-			        return this.each(function() {
-			            var $this = $(this);
-			            var start = parseInt($this.text().replace(/,/g, ""));
-						commas = (commas === undefined) ? true : commas;
-			            $({value: start}).animate({value: stop}, {
-			            	duration: duration == undefined ? 1000 : duration,
-			            	easing: ease == undefined ? "swing" : ease,
-			            	step: function() {
-			            		$this.text(Math.floor(this.value));
-								if (commas) { $this.text($this.text().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,")); }
-			            	},
-			            	complete: function() {
-			            	   if (parseInt($this.text()) !== stop) {
-			            	       $this.text(stop);
-								   if (commas) { $this.text($this.text().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,")); }
+// 數字跳動動畫
+(function($) {
+	 $.fn.animateNumbers = function(stop, commas, duration, ease) {
+		return this.each(function() {
+			var $this = $(this);
+			var start = parseInt($this.text().replace(/,/g, ""));
+				commas = (commas === undefined) ? true : commas;
+			    $({value: start}).animate({value: stop}, {
+			        duration: duration == undefined ? 1000 : duration,
+			        easing: ease == undefined ? "swing" : ease,
+			        step: function() {
+			           	$this.text(Math.floor(this.value));
+							if (commas) { $this.text($this.text().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,")); }
+			            },
+			            complete: function() {
+			            	if (parseInt($this.text()) !== stop) {
+			            	    $this.text(stop);
+							if (commas) { $this.text($this.text().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,")); }
 			            	   }
 			            	}
 			            });
 			        });
 			    };
-			})(jQuery);
+})(jQuery);
 
+
+//Web3.js
 
 		if (typeof web3 !== 'undefined') {
 		  web3 = new Web3(web3.currentProvider);
