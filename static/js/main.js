@@ -1,6 +1,7 @@
 
 
-  AOS.init();
+AOS.init();
+
 
 
 
