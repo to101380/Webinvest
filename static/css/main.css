@@ -20,7 +20,8 @@ p{
 @font-face {
   font-family: 'Ailerons';
   src: url('./static/fonts/Ailerons.woff') format("woff"),
-       
+         url('./static/fonts/Ailerons.ttf') format("truetype"),
+         url('./static/fonts/Ailerons.eot') format("embedded-opentype");
 }
 
 
