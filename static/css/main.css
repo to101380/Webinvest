@@ -9,7 +9,7 @@
 body {
   margin: 0;
   font-size: 28px;
-  font-family: Ailerons, Arial, Helvetica, sans-serif;
+  font-family:Arial, Helvetica, sans-serif;
 }
 
 
@@ -17,18 +17,12 @@ p{
 	font-family:微軟正黑體;
 }
 
-@font-face {
-  font-family: 'Ailerons';
-  src: url('./static/fonts/Ailerons.woff') format("woff"),
-         url('./static/fonts/Ailerons.ttf') format("truetype"),
-         url('./static/fonts/Ailerons.eot') format("embedded-opentype");
-}
 
 
 
 .logo_name{
 
-	font-family:"Ailerons";
+	font-family:"ailerons";
 
 }
 
