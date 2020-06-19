@@ -15,10 +15,13 @@ body {
 
 p{
 	font-family:微軟正黑體;
+  font-size: 18px;
 }
 
 
-
+.company_logo{
+  margin: 8px;
+}
 
 .logo_name{
 
@@ -32,7 +35,7 @@ p{
   justify-content: center;
   align-items: center;	
   flex-direction: column;	
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(68, 134, 170, 0.7)),url(./milky-way-illustration-1169754.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(68, 134, 170, 0.7)),url(./night-sky.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
