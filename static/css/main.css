@@ -5,12 +5,6 @@
 	
 } 
 
-@font-face {
-  font-family: 'Ailerons-Typeface';
-  src: url('./static/font/Ailerons-Typeface.woff') format("woff"),
-         url('./static/font/Ailerons-Typeface.ttf') format("truetype"),
-         url('./static/font/Ailerons-Typeface.eot') format("embedded-opentype");
-}
 
 body {
   margin: 0;
@@ -26,7 +20,7 @@ p{
 
 .logo_name{
 
-	font-family:Ailerons-Typeface;
+	font-family:Ailerons;
 
 }
 
