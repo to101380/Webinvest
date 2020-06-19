@@ -1,5 +1,5 @@
 
-
+//AOS動畫
 AOS.init();
 
 
@@ -20,12 +20,17 @@ window.onscroll = function() {myFunction()};
 	  }
 	}
 
+
+
 // 換成百分比
 function toPercent(point){
 		  var str=Number(point*100).toFixed(2);
 		  str+="%";
 		  return str;
 		}
+
+
+
 
 // 數字跳動動畫
 (function($) {
@@ -51,6 +56,9 @@ function toPercent(point){
 			        });
 			    };
 })(jQuery);
+
+
+
 
 
 //Web3.js
