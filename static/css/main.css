@@ -90,5 +90,13 @@ p{
 
 
 
+@media (max-width: 991px) { 
+ 
+  #navbar{
+    padding: 10px;
+  }
+
+}
+
 
 
