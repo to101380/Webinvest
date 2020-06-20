@@ -20,6 +20,8 @@ window.onscroll = function() {myFunction()};
 	  }
 	}
 
+	
+
 
 
 // 換成百分比
