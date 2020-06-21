@@ -5,25 +5,6 @@ AOS.init();
 
 
 
-
-// navbar 滑動後至頂
-window.onscroll = function() {myFunction()};
-
-	var navbar = document.getElementById("navbar");
-	var sticky = navbar.offsetTop;
-
-	function myFunction() {
-	  if (window.pageYOffset >= sticky) {
-	    navbar.classList.add("sticky")
-	  } else {
-	    navbar.classList.remove("sticky");
-	  }
-	}
-
-	
-
-
-
 // 換成百分比
 function toPercent(point){
 		  var str=Number(point*100).toFixed(2);
