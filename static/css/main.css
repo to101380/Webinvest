@@ -32,16 +32,6 @@ li a {
 
 }
 
-.Transitions{  
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(68, 134, 170, 0.7)),url(./night-sky.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; 
-  height: 180px;  
-  background-color: #f1f1f1;  
-  text-align: center; 
-  background-attachment: fixed;
-}
 
 .header {
   
