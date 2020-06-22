@@ -1,7 +1,7 @@
 *{
 	font-family:微軟正黑體;
-/*	  border: solid 1px ;	 */ 
-	font-family:Arial;
+	/*  border: solid 1px ;	  */
+	
 	
 } 
 
@@ -51,19 +51,75 @@ li a {
   background-attachment: fixed;
 }
 
-.Service{
-  display: flex;
-  justify-content: center;
-  align-items: center;  
+.Service{   
   flex-direction: column; 
   background-position: center;
   position: relative;
   height: 600px;  
   background-color: #FFFFFF;
-  padding: 30px;
+  padding: 100px 10px 60px 10px;
   text-align: center;
 }
 
+.Service h1 {
+  color: #343a40;
+  font-size: 28px;
+}
+
+.Service_icon{  
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 18px 15px 18px 15px;
+  box-shadow: 0px 0px 20px rgba(0,0,0,0.3);
+}
+
+.Service_icon .icon_a {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-image: url(https://i.ya-webdesign.com/images/cash-symbol-png-6.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.Service_icon .icon_b {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-image: url(https://i.ya-webdesign.com/images/cash-symbol-png-6.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.Service_icon .icon_c {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-image: url(https://i.ya-webdesign.com/images/cash-symbol-png-6.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.Service_icon .icon_d {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-image: url(https://i.ya-webdesign.com/images/cash-symbol-png-6.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.Service_card{
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  flex-direction: column; 
+}
 
 
 
