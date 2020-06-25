@@ -55,16 +55,34 @@ li a {
   text-align: center;
   color: white;
   background-attachment: fixed;
+
+    -webkit-background-size: cover !important; 
+    -moz-background-size: cover !important; 
+    -o-background-size: cover;    
+    z-index: -1;
+}
+
+.header:before{
+    content: "";
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: inherit;
+    -webkit-background-size: cover!important;
+    -o-background-size: cover;
+    background-size: cover!important;
 }
 
 .Service{   
   flex-direction: column; 
   background-position: center;
-  position: relative;
-  height: 600px;  
+  position: relative;   
   background-color: #FFFFFF;
-  padding: 100px 10px 60px 10px;
-  text-align: center;
+  padding: 100px 10px 300px 10px;
+  text-align: center;  
 }
 
 .Service h1 {
