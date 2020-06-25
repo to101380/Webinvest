@@ -1,9 +1,10 @@
 *{
 	font-family:微軟正黑體;
 /*	  border: solid 1px ;	  */
-	
-	
+-webkit-overflow-scrolling: touch;
+overflow-y: auto;	
 } 
+
 
 html {
   scroll-behavior: smooth;
@@ -13,9 +14,6 @@ html {
 body {
   margin: 0; 
   font-family:Arial, Helvetica, sans-serif;
-
-  -webkit-overflow-scrolling: touch;
-  overflow-y: auto;
 }
 
 
