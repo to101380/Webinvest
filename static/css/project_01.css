@@ -102,12 +102,13 @@ li a {
   	flex-direction: column;
   	align-items: center;
   	justify-content: center;
+  	margin: 10px;
 }
 
 .project_content{
 	border-radius: 3px;
   	border:0.5px solid #afafaf;
-  	margin-bottom: 8px;
+  	margin: 8px;
 }
 
 .project_content li{
