@@ -1,6 +1,6 @@
 *{
   font-family:微軟正黑體;
-/*border: solid 1px ;	  */
+/*border: solid 1px ;	*/  
   -webkit-overflow-scrolling: touch;
   box-sizing: border-box;
 } 
@@ -42,98 +42,80 @@ li a {
 
 }
 
-
-.columns {
-  float: left;
-  width: 16%; 
-  border-radius: 8px;
-  overflow: hidden; 
-  margin:8px 3px; 
-  -webkit-transition: 0.3s; 
-  transition:0.3s;
-}
-
-.price {
-  list-style-type: none;
-  border: 1px solid #eee;
-  margin: 0;
-  padding: 0;
-  -webkit-transition: 0.3s; 
-}
-
-.columns:hover {
-  box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
-}
-
-.price .header {
-  background-color: #111;
-  color: white;
-  font-size: 25px;
-}
-
-.price li {
-  border-bottom: 1px solid #eee;
-  padding: 20px;
-  text-align: center;
-}
-
-.price .grey {
-  background-color: #eee;
-  font-size: 20px;
-}
-
-.button {
-  background-color: #4CAF50;
-  border: none;
-  color: white;
-  padding: 10px 25px;
-  text-align: center;
-  text-decoration: none;
-  font-size: 18px;
+.cos_center{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
 }
 
 .price_card{
-	width: 16%; 
-  	border-radius: 3px;
-  	border:0.5px solid #afafaf;
-  	overflow: hidden; 
-  	padding: 8px;
-  	display: flex;
-  	flex-direction: column;
-  	align-items: center;
-  	justify-content: center;
-  	margin: 10px;
-}
-
-.project_content{
-	border-radius: 3px;
-  	border:0.5px solid #afafaf;
-  	margin: 8px;
-}
-
-.project_content li{
+	display: flex;	
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;	
+	border-radius: 8px;
 	margin: 10px;
-	list-style-type: none;
-	color: #4d525e;
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+	padding: 10px;
+	border:solid 1px #d3d3d3;
+
+}
+
+
+.price_card:hover{	
+	box-shadow: 0px 0px 30px rgba(0,0,0,0.2);
+	transition: 0.3s;
+}
+
+
+
+.price_content{	
+	display: flex;	
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;	
+	padding: 20px; 
+	border-radius: 8px;
+	border:solid 1px #d3d3d3;
+	margin-bottom: 10px; 
+}
+
+.price_title{
+	color: #f7a21d;
+	margin-bottom: 50px;
+	font-size: 22px;
+}
+
+.price_item{
+	margin: 50px 10px 30px 0px ;
 	font-size: 12px;
 }
 
-
-.price_title{
-	font-size: 28px;
-	list-style-type: none;
-	padding: 20px;
-	color: #ee582b;
+.price_item li{	
+	line-height:30px;
+	color: #5a6268;
+	list-style: none;
+  	padding-left: 0;
 }
+
+.price_item ul{	
+	line-height:30px;	
+	font-weight: bold;
+	list-style: none;
+  	padding-left: 0;
+}
+
+
+
 
 @media only screen and (max-width: 600px) {
   .columns {
     width: 100%;
   }
 
-  .price_card{
-  	width: 70%;
-  }
+
+  
 }
 
 
