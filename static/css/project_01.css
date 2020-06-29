@@ -68,6 +68,13 @@ li a {
 	box-shadow: 0px 0px 30px rgba(0,0,0,0.2);	
 }
 
+.price_card p{
+	margin: 20px 0px;
+	font-size: 28px;
+	font-weight: bold;
+	color: #4c4e4f;
+}
+
 
 
 .price_content{	
@@ -83,12 +90,12 @@ li a {
 
 .price_title{
 	color: #f7a21d;
-	margin-bottom: 50px;
+	margin-bottom: 20px;
 	font-size: 22px;
 }
 
 .price_item{
-	margin: 50px 10px 30px 0px ;
+	margin: 30px 10px 0px ;
 	font-size: 12px;
 }
 
@@ -107,12 +114,26 @@ li a {
 }
 
 
+.cos_font_01{
+	font-size: 14px;
+}
+
+
 
 
 @media only screen and (max-width: 600px) {
   .columns {
     width: 100%;
   }
+
+
+  
+}
+
+@media only screen and (max-width: 768px) {
+  .price_card p{	
+	font-size: 23px;	
+ }
 
 
   
