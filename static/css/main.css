@@ -47,6 +47,8 @@ li a {
   justify-content: center;
   align-items: center; 
   flex-direction: column;
+
+  -webkit-flex-direction: column;
 }
 
 .img_center{
@@ -58,6 +60,9 @@ li a {
 .img_center p{
   font-weight: bold;
   color: #636363;
+
+  -webkit-font-weight: bold;
+
 }
 
 
