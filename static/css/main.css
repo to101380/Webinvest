@@ -1,6 +1,6 @@
 *{
 	font-family:微軟正黑體;
-/*	  border: solid 1px ;	  */
+	  border: solid 1px ;	  
 -webkit-overflow-scrolling: touch;
 } 
 
@@ -42,6 +42,12 @@ li a {
 
 	font-family:"ailerons";
 
+}
+
+.img_center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 
@@ -152,7 +158,6 @@ li a {
   align-items: center; 
   flex-direction: column; 
 }
-
 
 
 
