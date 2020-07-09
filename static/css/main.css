@@ -162,9 +162,19 @@ li a {
 
 
 
-@media (max-width: 991px) { 
+@media (max-width: 767px) { 
  
-  
+  .direct_row{
+    display: none;     
+  }
+
+}
+
+@media (min-width: 768px) { 
+ 
+  .direct_column{
+    display: none;     
+  }
 
 }
 
