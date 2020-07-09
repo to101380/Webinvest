@@ -39,15 +39,25 @@ li a {
 }
 
 .logo_name{
-
 	font-family:"ailerons";
+}
 
+.icon_name{
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  flex-direction: column;
 }
 
 .img_center{
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center;  
+}
+
+.img_center p{
+  font-weight: bold;
+  color: #636363;
 }
 
 
@@ -158,6 +168,12 @@ li a {
   align-items: center; 
   flex-direction: column; 
 }
+
+.direct_row{
+  flex-direction: column;
+}
+
+
 
 
 
