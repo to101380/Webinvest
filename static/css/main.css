@@ -173,8 +173,7 @@ li a {
   display: flex;
   justify-content: center;
   align-items: center;  
-  flex-direction: column;   
-  height: 300px;   
+  flex-direction: column;  
   padding: 30px;
   text-align: center;
   color: white;  
