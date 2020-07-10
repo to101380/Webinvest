@@ -1,6 +1,6 @@
 *{
 	font-family:微軟正黑體;
-	/*  border: solid 1px ;	  */
+/*	  border: solid 1px ;	  */
 -webkit-overflow-scrolling: touch;
 } 
 
@@ -51,6 +51,12 @@ li a {
  flex-direction: column;
 
  -webkit-flex-direction: column;
+}
+
+.container h4{
+  color: #2e4e7d;
+  margin: 100px 0px;
+  opacity: 0.6;
 }
 
 
