@@ -1,6 +1,6 @@
 *{
 	font-family:微軟正黑體;
-/*	  border: solid 1px ;	  */
+	  /*border: solid 1px ;	 */ 
 -webkit-overflow-scrolling: touch;
 } 
 
@@ -42,15 +42,22 @@ li a {
 
 .coin_intro_b{
  background-color: #566976; 
- padding: 18px;
+ padding: 40px;
  height: 450px;
-
  display: flex;
  justify-content: center;
  align-items: center; 
  flex-direction: column;
-
  -webkit-flex-direction: column;
+}
+
+.STO_intro{ 
+ 
+ padding: 40px; 
+ text-align:left;
+ display: flex; 
+ flex-direction: column;
+-webkit-flex-direction: column;
 }
 
 .container h4{
@@ -59,8 +66,6 @@ li a {
   opacity: 0.5;
   font-size: 18px;
 }
-
-
 
 
 .company_logo{
@@ -76,7 +81,6 @@ li a {
   justify-content: center;
   align-items: center; 
   flex-direction: column;
-
   -webkit-flex-direction: column;
 }
 
@@ -90,15 +94,12 @@ li a {
   font-weight: bold;
   color: #636363;
   font-size: 14px;
-
   -webkit-font-weight: bold;
-
 }
 
 
 
-.header {
-  
+.header {  
   display: flex;
   justify-content: center;
   align-items: center;	
@@ -120,6 +121,7 @@ li a {
   -o-background-size: cover;    
   z-index: -1;
 }
+
 
 .header:before{
     content: "";
@@ -149,60 +151,18 @@ li a {
   font-size: 28px;
 }
 
-.Service_icon{  
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  margin: 18px 15px 18px 15px;
-  box-shadow: 0px 0px 20px rgba(0,0,0,0.3);
-}
 
-.Service_icon .icon_a {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  background-image: url(https://i.ya-webdesign.com/images/cash-symbol-png-6.png);
+.STO_img{
+  width: 200px;
+  height: 200px; 
+  background-image: url(./function_img/WI_STO.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.Service_icon .icon_b {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  background-image: url(https://i.ya-webdesign.com/images/cash-symbol-png-6.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 
-.Service_icon .icon_c {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  background-image: url(https://i.ya-webdesign.com/images/cash-symbol-png-6.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 
-.Service_icon .icon_d {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  background-image: url(https://i.ya-webdesign.com/images/cash-symbol-png-6.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.Service_card{
-  display: flex;
-  justify-content: center;
-  align-items: center; 
-  flex-direction: column; 
-}
 
 .direct_row{
   flex-direction: column;
@@ -217,6 +177,12 @@ li a {
  
   .direct_row{
     display: none;     
+  }  
+
+  .STO_intro{
+    justify-content:center;
+    align-items: center;
+    text-align:center;
   }
 
 }
