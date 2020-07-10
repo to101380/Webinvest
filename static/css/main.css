@@ -1,6 +1,6 @@
 *{
 	font-family:微軟正黑體;
-	  /*border: solid 1px ;	 */ 
+/*	  border: solid 1px ;	  */
 -webkit-overflow-scrolling: touch;
 } 
 
@@ -166,6 +166,18 @@ li a {
 
 .direct_row{
   flex-direction: column;
+}
+
+.footer{
+  background-color: #616161;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  flex-direction: column;   
+  height: 300px;   
+  padding: 30px;
+  text-align: center;
+  color: white;  
 }
 
 
