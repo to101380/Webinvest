@@ -56,7 +56,8 @@ li a {
 .container h4{
   color: #2e4e7d;
   margin: 100px 0px;
-  opacity: 0.6;
+  opacity: 0.5;
+  font-size: 18px;
 }
 
 
@@ -88,6 +89,7 @@ li a {
 .img_center p{
   font-weight: bold;
   color: #636363;
+  font-size: 14px;
 
   -webkit-font-weight: bold;
 
@@ -138,7 +140,7 @@ li a {
   background-position: center;
   position: relative;   
   background-color: #FFFFFF;
-  padding: 100px 10px 300px 10px;
+  padding: 100px 10px 200px 10px;
   text-align: center;  
 }
 
