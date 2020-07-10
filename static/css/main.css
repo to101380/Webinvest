@@ -161,6 +161,14 @@ li a {
   background-size: cover;
 }
 
+.debt_img{
+  width: 200px;
+  height: 200px; 
+  background-image: url(./function_img/WebDebt.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 
 
