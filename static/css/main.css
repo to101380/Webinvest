@@ -1,6 +1,6 @@
 *{
 	font-family:微軟正黑體;
-/*	  border: solid 1px ;	  */
+/*	  border: solid 1px ;	 */ 
 -webkit-overflow-scrolling: touch;
 } 
 
@@ -126,6 +126,8 @@ li a {
   -o-background-size: cover;    
   z-index: -1;
 }
+
+
 
 
 .header:before{
