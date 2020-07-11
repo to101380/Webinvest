@@ -32,6 +32,11 @@ li a {
   transition: top 0.3s;
 }
 
+.hipster{
+  color: #a5a5a5;
+  font-size: 15px;
+}
+
 .coin_intro_a{
   background-image: url(./function_img/WBC_intro.png);
   background-position: center;
@@ -162,8 +167,8 @@ li a {
 }
 
 .debt_img{
-  width: 200px;
-  height: 200px; 
+  width: 155px;
+  height: 155px; 
   background-image: url(./function_img/WebDebt.png);
   background-position: center;
   background-repeat: no-repeat;
@@ -186,6 +191,7 @@ li a {
   text-align: center;
   color: white;  
 }
+
 
 
 
