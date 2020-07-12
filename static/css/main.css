@@ -56,13 +56,22 @@ li a {
  -webkit-flex-direction: column;
 }
 
-.STO_intro{ 
- 
+.STO_intro{  
  padding: 40px; 
  text-align:left;
  display: flex; 
  flex-direction: column;
 -webkit-flex-direction: column;
+}
+
+
+.STO_img{
+  width: 200px;
+  height: 200px; 
+  background-image: url(./function_img/WI_STO.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .container h4{
@@ -109,7 +118,7 @@ li a {
   justify-content: center;
   align-items: center;	
   flex-direction: column;	
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(68, 134, 170, 0.7)),url(./night-sky.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(68, 134, 170, 0.7)),url(./function_img/night-sky.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -159,14 +168,7 @@ li a {
 }
 
 
-.STO_img{
-  width: 200px;
-  height: 200px; 
-  background-image: url(./function_img/WI_STO.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+
 
 .debt_img{
   width: 155px;

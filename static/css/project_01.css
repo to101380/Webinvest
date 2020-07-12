@@ -43,10 +43,8 @@ li a {
 }
 
 .title_fonts{
-	font-size: 30px;
-	font-weight: bold;
-	color:#4c4e4f;
-	margin: 100px 0px 40px 0px;
+	font-size: 28px;	
+	color:#2e4e7d;	
 }
 
 .cos_center{
@@ -54,6 +52,31 @@ li a {
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
+}
+
+.STO_img{
+	width: 200px;
+    height: 200px; 
+    background-image: url(./function_img/WI_STO.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.STO_info_title{
+	text-align: left;
+}
+
+
+.STO_info ul{
+	color: #636363;
+	line-height:35px;		
+}
+
+.STO_info li{
+	text-align:left;
+	font-size: 15px;
 }
 
 .price_card{
@@ -128,28 +151,15 @@ li a {
 
 
 
-/*
-@media (min-width: 768px) {
-  
-
- .price_item{
-	width: 145px;	
- }
-
-  
-}
-
-@media (min-width: 1024px) {
+@media (max-width: 767px) { 
  
-
- .price_item{
-	width: 200px;	
- }
-
-  
+ .STO_info_title{
+	text-align: center;
 }
-*/
 
+
+ 
+}
 
 
 
