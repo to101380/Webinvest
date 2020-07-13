@@ -71,12 +71,21 @@ li a {
 
 .STO_info ul{
 	color: #636363;
-	line-height:35px;		
+	line-height:28px;		
 }
 
 .STO_info li{
 	text-align:left;
 	font-size: 15px;
+}
+
+.wallets{
+	background-image: url(./function_img/wallet.png);
+	width: 185px;
+	height: 50px; 	
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .price_card{
