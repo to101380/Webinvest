@@ -63,7 +63,8 @@ function toPercent(point){
 		  $("#wallets").css("display","none");		 
 		} else {
 		  // Set the provider you want from Web3.providers
-		  web3 = new Web3(new Web3.providers.HttpProvider("http://localhost:8545"));		  
+		  web3 = new Web3(new Web3.providers.HttpProvider("http://localhost:8545"));	
+		  $("#_STO_general").css("display","none");	  
 		}
 
 		var Swap_Contract;
