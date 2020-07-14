@@ -158,6 +158,46 @@ li a {
 	font-size: 14px;
 }
 
+.wallets_icon{
+	width: 40px;
+	height: 40px;
+	margin: 15px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	transition:  0.3s;
+}
+
+.wallets_icon:hover{
+	width: 60px;
+	height: 60px;
+	margin: 5px;	
+}
+
+.metamask{
+	background-image: url(./function_img/metamask-social.png);
+}
+
+.imtoken{
+	background-image: url(./function_img/imtoken.png);
+}
+
+.blocto{
+	background-image: url(./function_img/blocto-social.png);
+}
+
+.parity{
+	background-image: url(./function_img/parity_logo.png);
+}
+
+.status{
+	background-image: url(./function_img/status_logo.png);
+}
+
+.trust_wallet{
+	background-image: url(./function_img/trustwallet.png);
+}
+
 
 
 
