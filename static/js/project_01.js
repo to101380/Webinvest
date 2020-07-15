@@ -56,6 +56,14 @@ function toPercent(point){
 
 
 
+function invest(a,b,c){	
+	document.getElementById('project_price').innerHTML = a+" ETH";
+	document.getElementById('project_lv').innerHTML = "專案方案 : " + b;
+	document.getElementById('return').innerHTML = c;	
+}
+
+
+
 //Web3.js
 
 		if (typeof web3 !== 'undefined') {
@@ -107,7 +115,7 @@ function toPercent(point){
 		printPostsToConsole();
 
 
-		function invest(){
+		function ins(){
 			Swap_Contract.methods.swap().send({from: coinbase, value: "438000000000000000"}).then(function(receipt){			   
 				location.reload();
 			});

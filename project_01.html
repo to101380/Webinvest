@@ -72,7 +72,7 @@
 					</div>
 					<ul>
 						<li> 參與平台治理，擁有決策投票權</li>
-						<li> 平台盈餘分潤</li>							
+						<li> 平台盈餘分潤</li>											
 					</ul>									
 				</div>				
 			</div>			
@@ -129,7 +129,8 @@
 		    				</ul>	
 		    			</div>			    			    			
 		    		</div>
-		    		<button type="button" class="btn btn-secondary btn-sm btn-block" data-toggle="modal" data-target="#project">0.10 ETH</button>			    		
+		    		<button type="button"  class="btn btn-secondary btn-sm btn-block" data-toggle="modal" data-target="#project" onclick="invest('0.10','Donate','0%');">0.10 ETH
+		    		</button>			    		
 		    	</div>
 
 		    </div>
@@ -151,7 +152,7 @@
 		    				</ul>
 		    			</div>		    			
 		    		</div>
-		    		<button type="button" class="btn btn-secondary btn-sm btn-block" data-toggle="modal" data-target="#project">0.45 ETH</button>		    		
+		    		<button type="button" class="btn btn-secondary btn-sm btn-block" data-toggle="modal" data-target="#project" onclick="invest('0.45','Basic','95%');">0.45 ETH</button>		    		
 		    	</div>
 		    	
 		    </div>
@@ -173,7 +174,7 @@
 		    				</ul>
 		    			</div>		    			
 		    		</div>
-		    		<button type="button" class="btn btn-secondary btn-sm btn-block" data-toggle="modal" data-target="#project">3.75 ETH</button>			    		
+		    		<button type="button" class="btn btn-secondary btn-sm btn-block" data-toggle="modal" data-target="#project"  onclick="invest('3.75','Standard','95%');">3.75 ETH</button>			    		
 		    	</div>
 		    	
 		    </div>
@@ -199,7 +200,7 @@
 		    				</ul>
 		    			</div>		    			
 		    		</div>
-		    		<button type="button" class="btn btn-secondary btn-sm btn-block" data-toggle="modal" data-target="#project">9.00 ETH</button>			    		
+		    		<button type="button" class="btn btn-secondary btn-sm btn-block" data-toggle="modal" data-target="#project" onclick="invest('9.00','Premium','96%');">9.00 ETH</button>			    		
 		    	</div>
 
 		    </div>
@@ -221,7 +222,7 @@
 		    				</ul>
 		    			</div>		    			
 		    		</div>
-		    		<button type="button" class="btn btn-secondary btn-sm btn-block" data-toggle="modal" data-target="#project">20.4 ETH</button>			    		
+		    		<button type="button" class="btn btn-secondary btn-sm btn-block" data-toggle="modal" data-target="#project" onclick="invest('20.40','VIP','97%');">20.40 ETH</button>			    		
 		    	</div>
 		    	
 		    </div>
@@ -243,7 +244,7 @@
 		    				</ul>
 		    			</div>		    			
 		    		</div>
-		    		<button type="button" class="btn btn-secondary btn-sm btn-block" data-toggle="modal" data-target="#project">24.00 ETH</button>			    		
+		    		<button type="button" class="btn btn-secondary btn-sm btn-block" data-toggle="modal" data-target="#project" onclick="invest('24.00','VIPest','100%');">24.00 ETH</button>			    		
 		    	</div>
 		    	
 		    </div>
@@ -291,20 +292,20 @@
 	  <div class="modal-dialog modal-dialog-centered" role="document">
 	    <div class="modal-content">
 	      <div class="modal-header">
-	        <h5 class="modal-title title_fonts" id="exampleModalCenterTitle" style="font-size: 17px;">選擇方案 : VIPest</h5>
+	        <h5 class="modal-title title_fonts"  id="project_lv" style="font-size: 17px;"></h5>
 	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
 	          <span aria-hidden="true">&times;</span>
 	        </button>
 	      </div>
 	      <div class="modal-body" style="background-color:#f8f8f8;">
 	        <div class="container cos_center">
-	        	<h1 class="title_fonts" style="margin: 10px 0px;"> 0.1 ETH</h1>	        	
+	        	<h1 class="title_fonts" id="project_price" style="margin: 10px 0px;"></h1>	        	
 	        </div>
 	        <div class="STO_info" style="padding: 18px;">
 	        	<h5 style="font-size: 15px;color:#5a6268;">注意事項 :  </h5>
 	        	<ul>
 	        		<li>此專案在募集資金達100%後，團隊會開始建置平台(Webinvest)。</li>
-	        		<li>若在時間到期時，募集資金尚未達到100%，表示募資失敗，會退X%的ETH還給投資人。</li>
+	        		<li>若在時間到期時，募集資金尚未達到100%，表示募資失敗，會退<span id="return"></span>的ETH還給投資人。</li>
 	        		<li>募資成功後，可於此頁面檢視平台(Webinvest)建置進度。</li>
 	        		<li>平台盈餘每2~4週依照發放的Webs比例分給持有者。</li>
 	        	</ul>
