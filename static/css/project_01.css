@@ -71,18 +71,17 @@ li a {
 
 .STO_info ul{
 	color: #636363;
-	line-height:28px;		
+	line-height:32px;		
 }
 
 .STO_info li{
 	text-align:left;
-	font-size: 15px;
+	font-size: 12px;
 }
 
 .STO_general{
 
-	margin: 15px;
-	height: 300px;
+	margin: 15px;	
 	border:solid 1px #d3d3d3;
 	border-radius: 8px;	
 	display: flex;
@@ -210,6 +209,17 @@ li a {
 
 .trust_wallet{
 	background-image: url(./function_img/trustwallet.png);
+}
+
+.footer{
+  background-color: #616161;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  flex-direction: column;  
+  padding: 30px;
+  text-align: center;
+  color: white;  
 }
 
 

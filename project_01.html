@@ -252,6 +252,23 @@
 		</div>
 	</section>	
 
+	<section class="footer">
+		<div class="container">
+		  <div class="row justify-content-md-center">
+		    <div class="col-md-4">
+		      
+		    </div>
+		    <div class="col-md-4">
+		      
+		    </div>
+		    <div class="col-md-4">
+		      
+		    </div>
+		  </div>		  
+		</div>	
+		<p style="font-size: 8px; margin-top: 12px;">© 2020 Copyright: WebInvest</p>	  
+	</section>
+
 
 <!-- Modal------------------------------------------------------------------------------------------------- -->
 
@@ -288,6 +305,7 @@
 	</div>
 
 <!-- choose_project -->
+
 	<div class="modal fade" id="project" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
 	  <div class="modal-dialog modal-dialog-centered" role="document">
 	    <div class="modal-content">
@@ -307,16 +325,32 @@
 	        		<li>此專案在募集資金達100%後，團隊會開始建置平台(Webinvest)。</li>
 	        		<li>若在時間到期時，募集資金尚未達到100%，表示募資失敗，會退<span id="return"></span>的ETH還給投資人。</li>
 	        		<li>募資成功後，可於此頁面檢視平台(Webinvest)建置進度。</li>
-	        		<li>平台盈餘每2~4週依照發放的Webs比例分給持有者。</li>
+	        		<li>每2~4週依照Webs發放比例分潤給持有者。</li>	        		
 	        	</ul>
+	        	
+	        	<div class="row">
+	        		<input type="checkbox" name="" style="margin:3px 6px 0px 0px;"><p style="font-size: 12px;">我同意條款內容並遵守規定</p>
+	        	</div>
+	        	<p>
+				  <a  data-toggle="collapse" href="#recommand" role="button" aria-expanded="false" aria-controls="collapseExample" style="font-size: 15px;">
+				    輸入推薦人地址 >
+				  </a>				 
+				</p>
+				<div class="collapse" id="recommand">
+				  <div >
+				    <input type="input" name="" placeholder="0xbc1A...334">
+				  </div>
+				</div>
 	        </div>
 	      </div>
 	      <div class="modal-footer">
-	      	<a href="" style="font-size: 13px;"> 錢包使用教學 ></a>
+	      	<button type="button" class="btn btn-primary btn-sm" id="comfirm">確認</button>
 	      </div>	      
 	    </div>
 	  </div>
 	</div>
+
+
 
 
 
