@@ -68,11 +68,13 @@ function invest(a,b,c){
 
 		if (typeof web3 !== 'undefined') {
 		  web3 = new Web3(web3.currentProvider);
-		  $("#wallets").css("display","none");		 
+		  $("#wallets").css("display","none");	
+		  $("button").attr("data-target","#project"); 
 		} else {
 		  // Set the provider you want from Web3.providers
 		  web3 = new Web3(new Web3.providers.HttpProvider("http://localhost:8545"));	
-		  $("#_STO_general").css("display","none");	  
+		  $("#_STO_general").css("display","none");	
+		  $("button").attr("data-target","#wallets_downlaod");   
 		}
 
 		var Swap_Contract;

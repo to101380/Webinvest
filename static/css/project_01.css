@@ -26,10 +26,17 @@ li a {
   font-size: 15px;
 }
 
+
+::placeholder {
+  color: #e2e2e2;
+  opacity: 1; /* Firefox */
+  font-size: 12px;
+}
+
+
 #navbar { 
   transition: top 0.3s;
 }
-
 
 
 .company_logo{
