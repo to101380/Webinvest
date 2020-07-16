@@ -63,6 +63,18 @@ function invest(a,b,c){
 }
 
 
+// agree button Boolean
+
+$("#agree").click(function(){	
+  var checked = $(this).prop( "checked" );
+
+  if (checked) {
+  	$("#comfirm").attr("class","btn btn-primary btn-sm");
+  }else{
+  	$("#comfirm").attr("class","btn btn-primary btn-sm disabled");
+  }
+ 
+});
 
 //Web3.js
 
