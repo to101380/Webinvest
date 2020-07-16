@@ -1,7 +1,7 @@
 *{
   font-family:微軟正黑體;
-/*border: solid 1px ;	  */
-  -webkit-overflow-scrolling: touch;
+/*border: solid 1px ;	  
+*/  -webkit-overflow-scrolling: touch;
   box-sizing: border-box;
 } 
 
@@ -70,6 +70,16 @@ li a {
     background-size: cover;
 }
 
+.recommend_img{
+	width: 200px;
+    height: 200px; 
+    background-image: url(./function_img/recommend.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.3;
+}
+
 
 .STO_info_title{
 	text-align: left;
@@ -83,7 +93,7 @@ li a {
 
 .STO_info li{
 	text-align:left;
-	font-size: 12px;
+	font-size: 14px;
 }
 
 .STO_general{
