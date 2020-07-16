@@ -38,6 +38,13 @@ li a {
   justify-content: center;
   text-align: center;
   top: -250px;
+
+  -webkit-display: flex;
+  -webkit-justify-content: center;
+  -webkit-text-align: center;
+  -webkit-top: -250px;
+
+  
 }
 
 
