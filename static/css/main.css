@@ -32,6 +32,15 @@ li a {
   transition: top 0.3s;
 }
 
+.start_now_btn{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  top: -250px;
+}
+
+
 .hipster{
   color: #a5a5a5;
   font-size: 15px;
@@ -110,6 +119,8 @@ li a {
   font-size: 14px;
   -webkit-font-weight: bold;
 }
+
+
 
 
 
@@ -201,7 +212,6 @@ li a {
 
 
 
-
 @media (max-width: 767px) { 
  
   .direct_row{
@@ -216,11 +226,16 @@ li a {
 
 }
 
+
+
+
+
 @media (min-width: 768px) { 
  
   .direct_column{
     display: none;     
   }
+
 
 }
 
