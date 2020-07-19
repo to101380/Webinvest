@@ -78,7 +78,7 @@
 						<a href="" style="font-size: 15px; margin-top: 15px;" id="more" class="cos_center" data-toggle="modal" data-target="#wallets_downlaod"> 查看更多...</a>
 						<div id="more_info">
 							<li class="li_title">詳細資訊</li>							
-							<li> 價格(私募期間) : <span id="webs_price"></span> ETH / Webs (<span id="webs_price_USD"></span> USD$)</li>
+							<li> 價格(私募期間) : <span id="webs_price"></span> ETH / Webs (≈ <span id="webs_price_USD"></span> USD$)</li>
 							<li> 總發行量 : <span id="total_supply"></span> Webs</li>
 							<li> 流通在外數量 : <span id="out_shares"></span> Webs (<span id="shares_rate"></span>)</li>
 							<li> 我持有的枚數 : <span id="webs_balance"> </span> Webs (<span id="hold_rate"></span>) </li>							
@@ -87,8 +87,14 @@
 					</ul>														
 				</div>				
 			</div>			
-		</div>		
-	</section>  
+		</div>
+	</section> 
+	<div class="container progress_bar " style="padding: 10px 50px;" data-aos="fade-up"  data-aos-duration="1000">
+		<p style="margin-bottom: 3px; color:#9a9da0; font-size: 13px;">目前Webs認購進度</p>
+		<div class="progress ">
+  			<div class="progress-bar bg-info" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+	    </div>
+	</div> 
 
 	<!-- <section class="cos_center">
 		<div class="load-5">       
@@ -343,7 +349,7 @@
 	      <div class="modal-body" style="background-color:#f8f8f8;">
 	        <div class="container cos_center">
 	        	<h1 class="title_fonts" id="project_price" style="margin: 10px 0px;"></h1>	
-	        	<p style="font-size: 13px; color: #9a9da0;"> <span id="project_USD"></span> USD$</p>        	
+	        	<p style="font-size: 13px; color: #9a9da0;"> ≈ <span id="project_USD"></span> USD$</p>        	
 	        </div>
 	        <div class="STO_info" style="padding: 18px;">
 	        	<h5 style="font-size: 15px;color:#5a6268;">注意事項 :  </h5>

@@ -118,13 +118,14 @@ $("#agree").click(function(){
 		if (typeof web3 !== 'undefined') {
 		  web3 = new Web3(web3.currentProvider);
 		  $("#wallets").css("display","none");	
-		  $("#more").css("display","none");
+		  $("#more").css("display","none");		  
 		  $("button").attr("data-target","#project"); 		  
 		} else {
 		  // Set the provider you want from Web3.providers
 		  web3 = new Web3(new Web3.providers.HttpProvider("http://localhost:8545"));	
 		  $("#_STO_general").css("display","none");	
 		  $("#more_info").css("display","none");
+		  $(".progress_bar").css("display","none");
 		  $("button").attr("data-target","#wallets_downlaod"); 
 		}
 
@@ -173,6 +174,14 @@ $("#agree").click(function(){
 		};
 
 		printPostsToConsole();
+
+
+		function block_link() {
+		    var str = block_height;  
+		    var result = str.link("https://etherscan.io/block/"+str);
+		    document.getElementById("block_height").innerHTML = result;   
+	     }   
+
 
 
 		function ins(){
