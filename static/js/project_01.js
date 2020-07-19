@@ -16,16 +16,16 @@ var currentScrollPos = window.pageYOffset;
 
 
 //cryptocurrency price
+var ETH_price;
+
 $(document).ready(function(){
     $.ajax({
         method:"GET",
         url: "https://api.coinlore.net/api/ticker/?id=80",        
       }).done(function(msg) {   
         console.log(msg);
-        var ETH_price = (msg[0].price_usd);     
-       
-        $("#total").text(toPercent(ETH_price)); 
-        
+        ETH_price = (msg[0].price_usd);  
+        $("#project_USD").text(ETH_price);
       });
   })  
 
@@ -44,6 +44,13 @@ function toPercent_2(point){
 		  str+="%";
 		  return str;
 		}
+
+// 進位	
+
+function toPoint_3(point){
+    var str=Number(point).toFixed(3);          
+    return str;
+  }		
 
 
 
@@ -89,6 +96,7 @@ function invest(a,b,c){
 	document.getElementById('project_price').innerHTML = a+" ETH";
 	document.getElementById('project_lv').innerHTML = "專案方案 : " + b;
 	document.getElementById('return').innerHTML = c;	
+	document.getElementById('project_USD').innerHTML =toPoint_3(a*ETH_price);
 }
 
 
@@ -122,7 +130,7 @@ $("#agree").click(function(){
 
 		var Webs_ERC20;		
 		var coinbase;
-		var decimal = 10**18;
+		var decimal = 10**18;		
 
 		async function printPostsToConsole() {
 
@@ -142,12 +150,24 @@ $("#agree").click(function(){
 		    var replace_part = Webs_address.replace(hidden_str,"...");            
 			$("#webs_address").text(replace_part);
 
+
+				
+
 			var total_supply = await  Webs_ERC20.methods.totalSupply().call({});	
 			$("#total_supply").text(total_supply/decimal);
 
 			var out_shares = await  Webs_ERC20.methods.balances("0x45aa3752E6ae9D4c1C4C45b9e4516e1bf3aC7Ad0").call({});	
 			$("#out_shares").text(out_shares/decimal);
 			$("#shares_rate").text(toPercent_5(out_shares/total_supply));
+
+			var webs_balance = await  Webs_ERC20.methods.balances(coinbase).call({});	
+			$("#webs_balance").text(webs_balance/decimal);				
+			$("#hold_rate").text(toPercent_2(webs_balance/out_shares));
+
+			var Webs_price = await 312/(out_shares/decimal)			
+			$("#webs_price").text(Webs_price);
+			$("#webs_price_USD").text(toPoint_3(ETH_price*Webs_price)); 
+
 		
 
 		};
