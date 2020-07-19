@@ -54,8 +54,7 @@
 	      </li>
 	    </ul>	    
 	  </div>	  
-	</nav>	
-
+	</nav>		
 
 	<section style="margin: 163px 0px 0px 0px;">
 				
@@ -75,17 +74,27 @@
 						<li> 盈餘分潤資格</li>
 						<a href="" style="font-size: 15px; margin-top: 15px;" id="more" class="cos_center" data-toggle="modal" data-target="#wallets_downlaod"> 查看更多...</a>
 						<div id="more_info">
-							<li> 價格(私募期間) : 0.06 ETH  (13.8 USD$)</li>
-							<li> 總發行量 : 1,000,000,000</li>
-							<li> 流通在外數量 : 5000 (0.0005%)</li>
-							<li> 我持有的枚數 :1000 (20%) </li>							
-							<li> ERC20地址 :  0X123...abc</li>
+							<li> 價格(私募期間) : <span id="webs_price"></span><span id="webs_price_USD"></span></li>
+							<li> 總發行量 : <span id="total_supply"></span> Webs</li>
+							<li> 流通在外數量 : <span id="out_shares"></span> Webs (<span id="shares_rate"></span>)</li>
+							<li> 我持有的枚數 :<span id="webs_balance"><span id="hold_rate"> </li>							
+							<li> ERC20地址 :  <span id="webs_address"></span></li>
 						</div>									
 					</ul>														
 				</div>				
 			</div>			
 		</div>		
 	</section>  
+
+	<section class="cos_center">
+		<div class="load-5">       
+	        <div class="ring-2">
+	          <div class="ball-holder">
+	            <div class="ball"></div>
+	          </div>
+	        </div>
+	    </div>
+    </section>
 
 
 	
