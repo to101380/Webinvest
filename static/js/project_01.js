@@ -209,11 +209,15 @@ $("#agree").click(function(){
 		async function printPostsToConsole() {
 
 			//取得帳號
-			coinbase = await web3.eth.getCoinbase();			
+			coinbase = await web3.eth.getCoinbase();				
+			var hidden_str = (coinbase.substring(6,38));
+		    var replace_part = coinbase.replace(hidden_str,"...");	
+		  
+				
 
 			//取得帳號餘額
 			var balance = await web3.eth.getBalance(coinbase);
-			$("#my_address").text(coinbase);
+			$("#my_address").text(replace_part);
 			$("#my_balance").text(web3.utils.fromWei(balance));  //wei 轉換成 ether web3.utils.fromWei()
 
 			var Webs_address = "0xe2432C9D8D668A5B1Eeb1d7e75D6e49D3952980D";
@@ -238,6 +242,11 @@ $("#agree").click(function(){
 			var webs_balance = await  Webs_ERC20.methods.balances(coinbase).call({});	
 			$("#webs_balance").text(thousandComma(webs_balance/decimal));				
 			$("#hold_rate").text(toPercent_2(webs_balance/out_shares));
+			if(webs_balance>0){
+				 $("button").css("display","none"); 
+			}
+
+			
 
 			var Webs_price = await 300/(out_shares/decimal)			
 			$("#webs_price").text(Webs_price);		
