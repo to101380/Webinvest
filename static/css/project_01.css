@@ -39,6 +39,10 @@ li a {
   transition: top 0.3s;
 }
 
+#webs_address a{
+	font-size: 13px;	
+}
+
 
 .company_logo{
   margin: 8px;
