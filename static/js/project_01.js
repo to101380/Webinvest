@@ -24,8 +24,7 @@ $(document).ready(function(){
         url: "https://api.coinlore.net/api/ticker/?id=80",        
       }).done(function(msg) {   
         console.log(msg);
-        ETH_price = (msg[0].price_usd);  
-        $("#project_USD").text(ETH_price);
+        ETH_price = (msg[0].price_usd); 
       });
   }) 
 
@@ -191,13 +190,25 @@ $("#agree").click(function(){
 			$("#webs_balance").text(thousandComma(webs_balance/decimal));				
 			$("#hold_rate").text(toPercent_2(webs_balance/out_shares));
 
-			var Webs_price = await 445.7/(out_shares/decimal)			
-			$("#webs_price").text(Webs_price);
-			$("#webs_price_USD").text(toPoint_3(ETH_price*Webs_price)); 
+			var Webs_price = await 300/(out_shares/decimal)			
+			$("#webs_price").text(Webs_price);		
+			$(document).ready(function(){
+			    $.ajax({
+			        method:"GET",
+			        url: "https://api.coinlore.net/api/ticker/?id=80",        
+			      }).done(function(msg) {   
+			        console.log(msg);
+			        var ETH_price = (msg[0].price_usd);
+			        $("#webs_price_USD").text(toPoint_3(ETH_price*Webs_price));  
+			      });
+			}) 
+
+			
 
 				    			    
 			var schedule = await web3.eth.getBalance("0x45aa3752E6ae9D4c1C4C45b9e4516e1bf3aC7Ad0");
-			var rate = toPercent_2(((schedule/decimal)+106.968)/445.7);
+			var rate = toPercent_2(((schedule/decimal)+72)/300);
+			$("#current_volume").text(toPoint_2(schedule/decimal+72));
 			$("#schedule").text(rate);
 			$("#schedule").css("width",rate);
 
