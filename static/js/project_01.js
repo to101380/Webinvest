@@ -243,7 +243,7 @@ $("#agree").click(function(){
 			$("#webs_balance").text(thousandComma(webs_balance/decimal));				
 			$("#hold_rate").text(toPercent_2(webs_balance/out_shares));
 			if(webs_balance>0){
-				 $("button").css("display","none"); 
+				 $("").css("display","none"); 
 			}
 
 			

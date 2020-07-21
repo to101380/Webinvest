@@ -1,0 +1,95 @@
+*{
+	font-family:微軟正黑體;
+	 /* border: solid 1px ;	  */
+-webkit-overflow-scrolling: touch;
+} 
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+body {
+  margin: 0; 
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+
+p{
+	font-family:微軟正黑體;
+  font-size: 18px;
+}
+
+li a {
+  font-size: 15px;
+}
+
+
+
+
+#navbar { 
+  transition: top 0.3s;
+}
+
+.cos_center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.coin_img{
+  width: 100px;
+  height: 100px;
+  margin: 15px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition:  0.3s;
+}
+
+.card{
+  border:1px solid #bcbcbc; 
+  border-radius: 8px;
+  margin: 10px;
+}
+
+
+.ETH{
+  background-image: url(./function_img/ETH.png);
+}
+
+.USDT{
+  background-image: url(./function_img/tether-usdt.png);
+}
+
+.Webs{
+  background-image: url(./function_img/Webs.png);
+}
+
+.WBC{
+  background-image: url(./function_img/WBC.png);
+}
+
+
+
+
+.footer{
+  background-color: #616161;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  flex-direction: column;  
+  padding: 30px;
+  text-align: center;
+  color: white;  
+}
+
+
+
+
+
+
+
+

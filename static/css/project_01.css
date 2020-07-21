@@ -67,7 +67,7 @@ li a {
 }
 
 .STO_img{
-	width: 200px;
+	  width: 200px;
     height: 200px; 
     background-image: url(./function_img/WI_STO.png);
     background-position: center;
@@ -76,7 +76,7 @@ li a {
 }
 
 .recommend_img{
-	width: 200px;
+	  width: 200px;
     height: 200px; 
     background-image: url(./function_img/recommend.png);
     background-position: center;
