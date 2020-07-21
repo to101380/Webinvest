@@ -1,7 +1,7 @@
 *{
 	font-family:微軟正黑體;
-	 /* border: solid 1px ;	  */
--webkit-overflow-scrolling: touch;
+/*	  border: solid 1px ;	  */
+  -webkit-overflow-scrolling: touch;
 } 
 
 
@@ -32,6 +32,11 @@ li a {
   transition: top 0.3s;
 }
 
+.title_fonts{
+  font-size: 25px;  
+  color:#2e4e7d;  
+}
+
 .cos_center{
   display: flex;
   align-items: center;
@@ -42,22 +47,31 @@ li a {
 .coin_img{
   width: 100px;
   height: 100px;
-  margin: 15px;
+  margin: 36px;
+  border-radius: 50%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   transition:  0.3s;
+  box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
 }
 
 .card{
   border:1px solid #bcbcbc; 
   border-radius: 8px;
   margin: 10px;
+  box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+  background-color: white;
+}
+
+.container h2{
+  color: #8d8e8e;
+  font-size: 20px;
 }
 
 
 .ETH{
-  background-image: url(./function_img/ETH.png);
+  background-image: url(./function_img/ETH.png); 
 }
 
 .USDT{
@@ -88,6 +102,16 @@ li a {
 
 
 
+
+
+@media (max-width: 767px) { 
+ 
+  .coin_img{    
+    margin: 36px 36px 12px 36px;    
+  }
+
+ 
+}
 
 
 
