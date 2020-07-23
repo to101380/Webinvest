@@ -1,6 +1,6 @@
 *{
 	font-family:微軟正黑體;
-/*	  border: solid 1px ;	  */
+	 /* border: solid 1px ;	  */
   -webkit-overflow-scrolling: touch;
 } 
 
@@ -110,6 +110,16 @@ li a {
     margin: 36px 36px 12px 36px;    
   }
 
+ 
+}
+
+
+
+@media (min-width: 768px) and (max-width: 1024px){ 
+  
+  .card h2{
+    font-size: 16px;
+  }
  
 }
 
