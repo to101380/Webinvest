@@ -265,7 +265,7 @@ $("#agree").click(function(){
 				    			    
 			var schedule = await web3.eth.getBalance("0x45aa3752E6ae9D4c1C4C45b9e4516e1bf3aC7Ad0");
 			var rate = toPercent_2(((schedule/decimal)+29.15)/100);
-			$("#current_volume").text(toPoint_2(schedule/decimal+29.1));
+			$("#current_volume").text(toPoint_2(schedule/decimal+29.15));
 			$("#schedule").text(rate);
 			$("#schedule").css("width",rate);
 
