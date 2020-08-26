@@ -242,22 +242,7 @@ $("#agree").click(function(){
 			if(webs_balance>0){
 				 $("").css("display","none"); 
 			}
-
-			
-
-			var Webs_price = await 100/(total_supply/decimal);			
-			$("#webs_price").text(Webs_price);		
-			$(document).ready(function(){
-			    $.ajax({
-			        method:"GET",
-			        url: "https://api.coinlore.net/api/ticker/?id=80",        
-			      }).done(function(msg) {   
-			        var ETH_price = (msg[0].price_usd);
-			        console.log(ETH_price);
-			        $("#webs_price_USD").text(toPoint_3(ETH_price*Webs_price));  
-			      });
-			}) 
-
+		
 			
 
 				    			    
